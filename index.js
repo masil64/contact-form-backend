@@ -47,11 +47,11 @@ app.post('/send', async (req, res) => {
   if (!message || typeof message !== 'string' || message.trim().length < 5) {
     return res.status(400).json({ message: 'Invalid message. It must be at least 5 characters.' });
   }
-
+/*
   if (!token) {
     return res.status(400).json({ message: 'Missing reCAPTCHA token.' });
   }
-
+*/
   // Verifica del token reCAPTCHA
   /*
   try {
