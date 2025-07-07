@@ -53,6 +53,7 @@ app.post('/send', async (req, res) => {
   }
 
   // Verifica del token reCAPTCHA
+  /*
   try {
     const verifyURL = `https://www.google.com/recaptcha/api/siteverify?secret=${process.env.RECAPTCHA_SECRET_KEY}&response=${token}`;
 
@@ -67,7 +68,7 @@ app.post('/send', async (req, res) => {
     console.error('Error verifying reCAPTCHA:', err);
     return res.status(500).json({ message: 'reCAPTCHA verification failed.' });
   }
-
+*/
   // Invio email solo se la verifica è superata
   try {
     const transporter = nodemailer.createTransport({
