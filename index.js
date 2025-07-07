@@ -7,7 +7,12 @@ const fetch = require('node-fetch');
 
 const app = express();
 
-app.use(cors());
+//app.use(cors());
+app.use(cors({
+  origin: 'https://www.theitalianuncut.ch',
+  credentials: true
+}));
+
 app.use(express.json());
 
 // Rate limiter: massimo 30 richieste ogni 15 minuti per IP
