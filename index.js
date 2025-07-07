@@ -9,7 +9,7 @@ const app = express();
 
 //app.use(cors());
 app.use(cors({
-  origin: 'https://www.theitalianuncut.ch',
+  origin: 'https://theitalianuncut.ch',
   credentials: true
 }));
 
